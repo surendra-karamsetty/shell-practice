@@ -1,5 +1,7 @@
 #!/bin/bash
 
+USERID=$(id -u)
+
 if [ $USERID -ne 0 ]; then
     echo "This is installtion script you need to run with root user."
 fi
