@@ -21,7 +21,7 @@ echo "nginx installation failed"
 exit 1
 else
     echo "nginx installation completed"
-if
+fi
 
 END_TIME=$(date +%s)
 
