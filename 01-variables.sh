@@ -1,12 +1,17 @@
 #!/bin/bash
 
-TIMESTAMP=$(date +%s)
+START_TIME=$(date +%s)
 
-echo "script start time $TIMESTAMP"
+echo "script start time $START_TIME"
 
 sleep 10
 
-TIMESTAMP=$(date +%s)
+END_TIME=$(date +%s)
 
-echo "Script end time $TIMESTAMP"
+echo "Script end time $END_TIME"
+
+TOTAL_TIME=$((START_TIME-END_TIME))
+
+echo "Total time taken to run this script $TOTAL_TIME"
+
 
