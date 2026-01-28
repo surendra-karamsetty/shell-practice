@@ -15,9 +15,13 @@ echo "Script start time $START_TIME"
 
 dnf install nginx -y
 
-if [ $? -eq 0 ]; then
+if [ $? -ne 0 ]; then
 
-echo "nginx installation is done"
+echo "nginx installation failed"
+exit 1
+else
+    echo "nginx installation completed"
+if
 
 END_TIME=$(date +%s)
 
@@ -25,4 +29,4 @@ echo "Script end time $END_TIME"
 
 TOTAL_TIME=$((END_TIME-START_TIME))
 
-echo "Total time taken to install the nginx $TOTAL_TIME"
+echo "Total time taken to install the nginx $TOTAL_TIME sec"
