@@ -23,6 +23,6 @@ END_TIME=$(date +%s)
 
 echo "Script end time $END_TIME"
 
-TOTAL_TIME=((END_TIME-START_TIME))
+TOTAL_TIME=$((END_TIME-START_TIME))
 
 echo "Total time taken to install the nginx $TOTAL_TIME"
