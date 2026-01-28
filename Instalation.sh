@@ -15,7 +15,7 @@ echo "Script start time $START_TIME"
 
 dnf install nginx -y
 
-if [ $? is -eq 0 ]; then
+if [ $? -eq 0 ]; then
 
 echo "nginx installation is done"
 
