@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 
-if [ $USER -nq 0 ]; then
+if [ $USERID -nq 0 ]; then
     echo "Please run the script woth sudo user"
     exit 1
 else
@@ -20,8 +20,8 @@ VALIDATION(){
 
 dnf install nginx -y
 
-VALIDATION $! "nginx installation"
+VALIDATION $? "nginx installation"
 
 dnf install mysql -y
 
-VALIDATION $! "mysql instalation"
+VALIDATION $? "mysql instalation"
