@@ -22,8 +22,8 @@ VALIDATION(){
     fi
 }
 
-dnf install nginx -y &>> LOG_FILE
+dnf install nginx -y &>> $LOG_FILE
 VALIDATION $? "Installing nginx"
 
-dnf install mysql -y &>> LOG_FILE
+dnf install mysql -y &>> $LOG_FILE
 VALIDATION $? "Installing mysql"
