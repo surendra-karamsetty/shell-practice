@@ -3,7 +3,7 @@
 
 set -e
 
-trap 'echo "There is an error in line $LINEND, Command: $BASH_COMMAND"' ERR
+trap 'echo "There is an error in  $LINENO, Command: $BASH_COMMAND"' ERR
 
 echo "My name is surendra"
 echo "I am learing DevOps as well"
